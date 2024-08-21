@@ -106,3 +106,98 @@ body {
     margin: 0!important;
     font-family: "Poppins", sans-serif;
 }
+
+.card-contain {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-contain > div {
+    background-color: #241005;
+    width: 172px;
+    height: 213px;
+    margin: 2rem;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.name{
+    color: white;
+    margin: 5rem 0 0.5rem 0 ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.price {
+    color: white;
+    padding-top: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.imgrawon{
+    position: absolute;
+    z-index: 2;
+    left: 10.6%;
+}
+
+.card-rawon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.imgsoto{
+    position: absolute;
+    z-index: 2;
+    left: 32.9%;
+    margin-bottom: 2rem ;
+}
+
+.card-soto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgpecel{
+    position: absolute;
+    z-index: 2;
+    left: 53%;
+    margin-bottom: 2rem ;
+}
+
+.card-pecel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgrames{
+    position: absolute;
+    z-index: 2;
+    left: 77.2%;
+    margin-bottom: 2rem ;
+}
+
+.card-rames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttoncart {
+    background-color: #FD7401;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border: none;
+    flex: none;
+}
