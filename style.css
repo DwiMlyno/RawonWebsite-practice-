@@ -201,3 +201,45 @@ body {
     border: none;
     flex: none;
 }
+
+.slogan {
+    margin-top: 5rem;
+    height: 408px;
+    width: 100%;
+    background-color:#141414 ;
+    display: flex;
+}
+
+.slogan > img {
+    width: 392px;
+    height: 355px;
+    padding-right: 3rem;
+}
+
+.main-text-slogan {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    margin: 0;
+    
+}
+
+.highlight-text-slogan {
+    color: #FD7401;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+.text-slogan {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 4rem;
+    font-size: large;
+}
+
+.text-slogan > p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
