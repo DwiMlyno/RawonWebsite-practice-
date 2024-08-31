@@ -243,3 +243,115 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
 }
+
+.more-menu {
+    padding-bottom: 5rem;
+}
+.more-menu > h1 {
+    margin-left: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    padding-top: 2rem;
+}
+
+.more-cardmenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card-content-soto {
+    width: 364px;
+    height: 408px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-soto > img {
+    width: 364px;
+    height: 214px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-content-soto > h3 {
+    padding: 0 2rem;
+}
+.card-content-soto > p {
+    padding: 0 2rem;
+}
+
+.pricesoto {
+    display: flex;
+    align-items: center;
+    padding-left:2rem ;
+    gap: 7rem;
+}
+
+.card-content-rawonsapi {
+    width: 364px;
+    height: 408px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-rawonsapi > img {
+    width: 364px;
+    height: 214px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-content-rawonsapi > h3 {
+    padding: 0 2rem;
+}
+.card-content-rawonsapi > p {
+    padding: 0 2rem;
+}
+
+.pricerawon {
+    display: flex;
+    align-items: center;
+    padding-left:2rem ;
+    gap: 7rem;
+}
+
+.card-content-cendol {
+    width: 364px;
+    height: 408px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-cendol > img {
+    width: 364px;
+    height: 214px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-content-cendol > h3 {
+    padding: 0 2rem;
+}
+.card-content-cendol > p {
+    padding: 0 2rem;
+}
+
+.pricecendol {
+    display: flex;
+    align-items: center;
+    padding-left:2rem ;
+    gap: 7rem;
+}
+
+.buttonmoremenu {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    margin-left: 31.5rem;
+    margin-top: 5rem;
+    background-color: #FD7401;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
