@@ -1,66 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 body {
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    padding: 2rem 0 2rem;
+    padding:0 1rem;
     display: flex;
+    position: fixed;
+    margin-bottom: 15rem;
+    background-color: white;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    animation: 1s ease-out 0s 1 moving;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes moving {
+    from{top: -60px;}   
 }
 
 .logo {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0.5rem 5rem 0.5rem 0;
     
 }
 
 .logo > p {
     margin: 0;
     padding: 0;
-
     justify-content: center;
-    font-size: 26px;
+    font-size: 19px;
     font-family: "Righteous", sans-serif;
 }
 
 .logo >img {
-    width: 75px;
+    width: 55px;
     object-fit: contain;
-    padding-bottom:0;
 }
 
 .navlink {
     display: flex;
-    margin-left: 3rem;
-    padding-top: 1rem;
     padding-left:6rem;
     gap: 2rem;
-    justify-content: center;
-   
+    align-items: center;
 }
 
-.navlink > p {
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    transform: translateY(10px);
+    align-items: center;
+}
+
+
+.nav > li > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    font-size: medium;
+
 }
 
 .checkout {
+    display: flex;
     margin-left: 10rem;
-    padding-top: 1rem;
+    align-items: center;
 }
 
 .checkout > img{
-    width: 40px;
+    width: 30px;
     padding: 0 1rem;
+    
 }
 
+.login {
+    display: flex;
+    align-items: center;
+}
 .buttonlogin {
     padding: 5px 30px;
-    margin-top: 1rem;
     font-size: 20px;
     border-radius: 20px;
     background-color: #FD7401;
@@ -70,24 +101,35 @@ body {
     font-weight: 500;
 }
 
+.buttonlogin:hover {
+    background-color: #241005;
+    transition: 0.4s;
+}
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 5rem;
 
 }
 
 .hero-container > img {
     width: 450px;
     margin-bottom: 2rem;
-
-
+    position: relative;
+    animation: 1s ease-out 0s 1 move;
+    transition: move 2s;
 }
 
+@keyframes move {
+    0% {width: 150px;}
+    100% {width: 450px;}
+}
 .text-content {
     display: flex;
     flex-direction: column;
     margin-left: 4rem;
+
 
 }
 
@@ -140,8 +182,8 @@ body {
 
 .imgrawon{
     position: absolute;
-    z-index: 2;
-    left: 10.6%;
+    z-index: 1;
+    top: -40px;
 }
 
 .card-rawon {
@@ -150,47 +192,52 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1;
     margin: 0;
 }
 
 .imgsoto{
     position: absolute;
-    z-index: 2;
-    left: 32.9%;
-    margin-bottom: 2rem ;
+    z-index: 1;
+    top: -40px;
 }
 
 .card-soto {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin: 0;
 }
 
 .imgpecel{
     position: absolute;
-    z-index: 2;
-    left: 53%;
-    margin-bottom: 2rem ;
+    z-index: 1;
+    top: -40px;
 }
 
 .card-pecel {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin: 0;
 }
 
 .imgrames{
     position: absolute;
-    z-index: 2;
-    left: 77.2%;
-    margin-bottom: 2rem ;
+    z-index: 1;
+    top: -40px;
 }
 
 .card-rames {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin: 0;
 }
 
 .buttoncart {
@@ -200,8 +247,13 @@ body {
     font-weight: 700;
     border: none;
     flex: none;
-}
+}   
 
+.buttoncart:hover {
+    background-color:#c05905;
+    transition: 0.4s;
+
+}
 .slogan {
     margin-top: 5rem;
     height: 408px;
@@ -210,7 +262,13 @@ body {
     display: flex;
 }
 
+.sotobetawi:hover {
+    width: 442px;
+    height: 405px;
+}
+
 .slogan > img {
+    transition: width 2s, height 2s;
     width: 392px;
     height: 355px;
     padding-right: 3rem;
@@ -243,7 +301,6 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
 }
-
 .more-menu {
     padding-bottom: 5rem;
 }
@@ -267,6 +324,11 @@ body {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-soto:hover {
+    transform: translateY(-10px) !important;
+    transition: 0.4s !important;
 }
 
 .card-content-soto > img {
@@ -297,6 +359,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card-content-rawonsapi:hover {
+    transform: translateY(-10px) !important;
+    transition: 0.4s !important;
+}
+
 .card-content-rawonsapi > img {
     width: 364px;
     height: 214px;
@@ -323,6 +390,11 @@ body {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-cendol:hover {
+    transform: translateY(-10px) !important;
+    transition: 0.4s !important;
 }
 
 .card-content-cendol > img {
@@ -354,4 +426,146 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
+}
+
+.seafood-promotion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem ;
+}
+.black-card {
+    display: flex;
+    height: 477px;
+    width: 1129px;
+    background-color: black;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    margin-top: 12rem;
+}
+
+.textt {
+    margin: 8rem 0 0 5rem ;
+    transition: 1s ease-out;
+}
+
+.textt:hover {
+    transform: translateX(20px);
+    transition: 0.5s;
+
+}
+.textt > p {
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.textt > h1 {
+    color: #FD7401;
+    font-size: 80px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    margin: 0;
+}
+
+.textt > img {
+    margin-left: 0.5rem;
+}
+
+.black-card > img {
+    position: absolute;
+    z-index: 2;
+    height: 760px;
+    width: 370px;
+    left: 55%;
+    top: -15rem;
+    object-fit: contain;
+    animation: udangmove 2s infinite alternate ;
+    
+}
+
+
+@keyframes udangmove {
+    from {transform: translateY(20px);}
+    to {transform: translateY(-20px);}
+    
+}
+
+.footer {
+    margin-top:9rem ;
+    width: 100%;
+    height: 413px;
+    background-color: #FD7401;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.text-about {
+    height: 182px;
+    width: 530px;
+    margin: 5rem 2rem 0 ;
+}
+
+.text-about > h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+.text-about > p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.payment-method {
+    margin: 3rem 4rem 2rem 0;
+    align-items: center;
+    text-align: center;
+}
+
+.payment-method > img {
+    padding-right: 1rem;
+}
+.payment-method > h1 {
+    padding-top: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.location {
+    display: flex;
+    gap: 1rem;
+}
+
+.logos-app {
+    display: flex;
+    width: 1011px;
+    height: 92px;
+    background-color: #141414;
+    border-radius: 25px 25px 0 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3.68rem;
+    margin-left: 8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navhome{
+    transition: 0.3s ease-out;
+}
+.navhome:hover {
+    transform: translateY(-5px);
 }
